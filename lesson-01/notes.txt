@@ -1,0 +1,18 @@
+Lesson 01: Preparation
+0. Rückblick auf JavaScript
+00. Was ist TypeScript?
+1. Node Package Manager
+- vorstellen
+- installieren
+- npm config set registry https://dev-nexus.inform-software.com/repository/npmjs-proxy
+2. Install TypeScript
+- npm install typescript -g
+3. typescript datei anlegen, mit klasse
+4. kompilieren
+- tsc target.ts
+5. Html mit js einbinden
+
+
+--
+6. tsconfig datei
+7. refrences
