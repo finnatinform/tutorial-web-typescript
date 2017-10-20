@@ -1,6 +1,9 @@
 Lesson 01: Preparation
 0. Rückblick auf JavaScript
 00. Was ist TypeScript?
+https://medium.freecodecamp.org/when-should-i-use-typescript-311cb5fe801b
+- gut: Großer Code, Entwickler für objektorientierte Sprachen
+- schlecht: flexibler Code, "if typescript is windows, javascript is linux", "hard to break things"
 1. Node Package Manager
 - vorstellen
 - installieren

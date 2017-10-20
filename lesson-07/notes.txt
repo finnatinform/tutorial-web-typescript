@@ -1,0 +1,4 @@
+lesson 07: modules and namespaces
+
+modules: two import types (require ist notwendig bei export= syntax)
+namespaces: 

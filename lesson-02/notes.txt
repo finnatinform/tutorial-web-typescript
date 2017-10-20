@@ -2,3 +2,8 @@ Lesson 02: Konfiguration + References
 01. Mehrere Dateien einbinden
 - Bei JavaScript einfach alle in Html Datei einbinden
 - Hier leichter: Wie import -> references oder 
+
+02. Konfiguration
+tsc company.ts
+
+oder tsconfig:

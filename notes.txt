@@ -1,0 +1,9 @@
+0. Warum TypeScript?
+1. Installation/prepartaion npm Einbindung in html
+2. Konfiguration + references
+3. basic type + variables
+4. interfaces + classes + enums
+5. functions
+6. generics
+7. modules + namespaces
+8. librarys: Http Call maybe?

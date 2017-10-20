@@ -1,0 +1,5 @@
+Libraries
+1. npm init
+2. npm install jquery @types/jquery
+3. in html datei einbinden
+4. in typescript einbinden

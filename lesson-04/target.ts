@@ -1,35 +1,77 @@
-// Remember: Every javscript code is typescript code
-// Variables -> let or var
+interface CarBrand{
+    GetSales():number ;
 
-// String
-let HString : string = "Finn";
+    producesMotorCycles?: boolean ;
+}
 
-// Number
-let HDecimal : number = 22 ;
-let HHex : number = 0xf00d ;
-let HBinary : number = 0b1010 ;
-let HOctal : number = 0o744;
-// Boolean
-let HBoolean : boolean = true ;
+abstract class GermanBrand{
+    abstract producesInGermany() : boolean ;
+}
 
-// Arrays
-let HVariant1 : number[] = [ 1234 , 5678 , 9101 ] ;
-// or
-let HVariant2 : Array<number> = [ 1234 , 5678 , 9101 ] ;
+class VolksWagen implements CarBrand{
 
-// Tuples
-let HTuple : [ string , number ] ;
-HTuple = [ "Hallo" , 42 ] ;
-// Error
-// HTuple = [ 42 , "Tschüss" ] ;
-let HFromTuple : string = HTuple[0].substr(1);
-HTuple[ 3 ] = "asd" ;
+    GetSales(): number {
+        throw new Error("Method not implemented.");
+    }
 
-// Any
-let HDoofeVariable : any ;
-HDoofeVariable = "ABC" ;
-HDoofeVariable = 1234 ;
-HDoofeVariable += 16 ;
+    constructor(){
+        // constructor
+    }
+    public ConfessDieselGate():void{
 
-// Cool Things
-let HSentence : string = "Hello, my name is Finn an i am ${ HDecimal } years old." ;
+    }
+
+    private _IsSentenced : boolean ;
+
+    get IsSentenced():boolean{
+        return this._IsSentenced ;
+    }
+    set IsSentenced( _IsSentenced : boolean ){
+        this._IsSentenced = _IsSentenced ;
+    }
+
+
+    static IsGerman : boolean = true ;
+}
+
+class Bmw extends GermanBrand implements CarBrand{
+
+    producesInGermany() : boolean {
+        throw new Error("Method not implemented.");
+    }
+
+    alias : string = "Bayrische Motorenwerke" ;
+
+    GetSales(): number {
+        throw new Error("Method not implemented.");
+    }   
+    
+    // also for derivated Classes
+    protected BuildFactory() : void{
+        // todo
+    }
+    producesMotorCycles : boolean = true ;
+}
+
+class Porsche extends VolksWagen{
+    // The easiest way to remember whether to use readonly or const is to ask whether you’re using it on a variable or a property. Variables use const whereas properties use readonly.
+    readonly numberOfWheels : number = 4 ;
+
+    GetSales() : number{
+        throw new Error("Method not implemented.");
+    }
+
+    // Only for Class
+    private BuildPanamera():void{
+
+    }
+}
+
+
+enum ModelTypes{
+    Kleinstwagen,
+    Kleinwagen,
+    SUV,
+    Kombi,
+    Limousine
+}
